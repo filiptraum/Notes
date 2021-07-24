@@ -1,0 +1,47 @@
+.postAddForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+    input {
+        flex: 1 1 auto;
+        height: 45px;
+        padding: 0px 11px;
+        border: none;
+        border-radius: 5px 3px 3px 5px;
+        margin-right: 6px;
+
+        @media screen and (max-width:400px) {
+            flex: 1 1 100%;
+            margin-right: 0px;
+            margin-bottom: 5px;
+        }
+
+        &::placeholder {
+            font-weight: 700;
+        }
+    }
+
+    button {
+        height: 45px;
+        width: 80px;
+        border: none;
+        border-radius: 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        color: #3C1F10;
+        font-variant: small-caps;
+
+        @media screen and (max-width:400px) {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: #31FFF3;
+        }
+    }
+}

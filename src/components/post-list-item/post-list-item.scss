@@ -1,0 +1,64 @@
+.postList li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.postList__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #31fff52f;
+
+    &._liked button:first-child {
+        background-color: #31ff4c;
+    }
+
+    @media screen and (max-width:550px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    span {
+        font-size: 24px;
+    }
+}
+.postList__btns {
+    display: flex;
+    margin-left: 10px;
+
+    @media screen and (max-width:550px) {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    button {
+        height: 40px;
+        width: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 4px;
+        letter-spacing: 2px;
+        color: #3C1F10;
+        font-variant: small-caps;
+
+        @media screen and (max-width:400px) {
+            width: 50%;
+        }
+
+        &:hover {
+            background-color: #31fff5;
+        }
+
+        &:last-child {
+            margin-left: 20px;
+
+             @media screen and (max-width:400px) {
+                 margin-left: 3px;
+             }
+        }
+    }
+}
